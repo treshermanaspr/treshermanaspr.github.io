@@ -1,6 +1,9 @@
 # treshermanas.github.io
 Tres Hermanas Blog
 
+
+## Based on the Malt Theme
+
 Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
 Increase the web presence of your event with this configurable theme.
 
