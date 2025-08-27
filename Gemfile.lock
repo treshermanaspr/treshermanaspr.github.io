@@ -68,6 +68,3 @@ DEPENDENCIES
   jekyll (= 3.7.4)
   jekyll-seo-tag (= 2.4.0)
   jekyll-sitemap (= 1.2.0)
-
-BUNDLED WITH
-   1.16.0
