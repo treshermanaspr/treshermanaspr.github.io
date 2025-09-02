@@ -167,10 +167,6 @@ h1 img.logo {
 	padding: 20px 40px;
 }
 
-.powered-by-eb {
-	display: none;
-}
-
 .sharing {
 	text-align: center;
 
@@ -191,28 +187,12 @@ h1 img.logo {
 			background-color: #3b5998;
 		}
 
-		&.twitter {
-			background-color: #55acee;
-		}
-
-		&.google-plus {
-			background-color: #db4437;
-		}
-
-		&.youtube {
-			background-color: #cd201f;
-		}
-
-		&.instagram {
-			background-color: #f167f5;
+		&.bluesky {
+			background-color: #1185fe;
 		}
 
 		&.linkedin {
 			background-color: #0077b5;
-		}
-
-		&.pinterest-icon:hover svg {
-			fill: #bd081c;
 		}
 
 		svg {
