@@ -114,7 +114,14 @@ _options:
 <h3 class="editable" id="contact-us">Contact</h3>
 <p class="editable">Send us a message with any questions about getting involved, or if you just want to say "Hi" or anything else.</p>
 
-<script type="text/javascript"> id = 216464; </script><script type="text/javascript" src="https://kontactr.com/wp.js"></script>
+<div class="contact-options">
+	<a href="mailto:{{ site.author.email }}?subject=Question about sending books to Puerto Rico&body=Hi! I have a question about your book donation project:%0D%0A%0D%0A" class="contact-button email-button" style="display: inline-flex; align-items: center; gap: 8px; background-color: #007acc; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">
+		<svg fill="currentColor" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-top: -10px;">
+			<path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+		</svg>
+		Send Email
+	</a>
+</div>
 
 <script type="text/javascript">
 	{% if page.map %}
