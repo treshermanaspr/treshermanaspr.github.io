@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.html": "liquid",
+    "*.md": "liquid"
+  },
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "liquid.engine": "jekyll",
+  "scss.validate": false,
+  "css.validate": false,
+  "scss.lint.unknownAtRules": "ignore"
+}

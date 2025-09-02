@@ -1,75 +1,50 @@
-# treshermanas.github.io
-Tres Hermanas Blog
+# Tres Hermanas Blog
 
+A Jekyll-based blog for Tres Hermanas.
 
-## Based on the Malt Theme
+## Local Development
 
-Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
-Increase the web presence of your event with this configurable theme.
+### Prerequisites
+- Ruby (2.7 or higher recommended)
+- Bundler gem
 
-![Malt](images/_screenshot.jpg)
+### Setup
 
-CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/treshermanaspr/treshermanaspr.github.io.git
+   cd treshermanaspr.github.io
+   ```
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
 
-## Features
+3. Run the site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-* Pre-built page
-* Pre-styled components
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* SEO tags
-* Google Analytics
-* [EventBrite](https://www.eventbrite.com/)
-* Contact Form
-* Featured
-* Image Gallery
+4. Open your browser to `http://localhost:4000`
 
-## Setup
+The site will automatically reload when you make changes to files.
 
-1. Add your site details in `_config.yml`.
-2. Add your Google Analytics to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+### Configuration
 
-## Develop
+1. Update site details in `_config.yml`
+2. Add your Google Analytics tracking ID to `_config.yml` (optional)
 
-Malt was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+## Building for Production
 
-Install the dependencies with [Bundler](http://bundler.io/):
+To build the site for production:
 
-~~~bash
-$ bundle install
-~~~
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+The built site will be in the `_site` directory.
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+## SEO
 
-## Editing
-
-Malt is already optimised for updating pages, company details and footer elements in CloudCannon.
-
-## SEO Tag
-
-This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
-
-## Google Analytics
-
-[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
-
-1. Add your Google Analytics key to `_config.yml`.
-2. Run your site in production `JEKYLL_ENV=production` (the default for CloudCannon and GitHub Pages).
-
-## EventBrite
-
-[EventBrite](https://www.eventbrite.com/) is a third party embeddable event module for websites. To install:
-
-1. Create an event on EventBrite.
-2. Copy the Ticket Form embed code from the Widgets menu item.
-3. Paste it into `eventbrite_embed` in `_config.yml`.
-
-## Image gallery / Featured
-
-The image gallery is populated by a front matter array in `index.html`. To add items just copy the existing structure.
+This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. Set a title in the front matter of each page for basic SEO optimization.
