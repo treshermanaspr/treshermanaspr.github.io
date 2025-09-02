@@ -19,6 +19,9 @@ social:
   name: Tres Hermanas
   links:
 
+# Open Graph defaults
+image: /uploads/project-logos/peapods.jpg
+
 # -----
 # Build
 

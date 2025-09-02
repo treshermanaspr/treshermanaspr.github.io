@@ -91,16 +91,18 @@ _options:
 
 <h3 class="editable">Tell your friends</h3>
 <div class="sharing">
-	{% assign share_url = page.url | absolute_url | cgi_escape %}
-	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include icons/social-icon.html icon="Facebook" %}</a>
-	<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}">{% include icons/social-icon.html icon="Twitter" %}</a>
-	<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ share_url }}">{% include icons/social-icon.html icon="LinkedIn" %}</a>
-	<a class="email" href="mailto:?subject=I%20Saw%20the%20Tres%20Hermanas%20site">{% include icons/social-icon.html icon="Email" %}</a>
+	{% assign share_text = "Send books to kids in Puerto Rico" | cgi_escape %}
+	{% assign participate_url = site.baseurl | append: "/pages/participate/" | absolute_url | cgi_escape %}
+	{% assign raw_participate_url = site.baseurl | append: "/pages/participate/" | absolute_url %}
+	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ raw_participate_url }}&hashtag=%23PuertoRico" target="_blank">{% include icons/social-icon.html icon="Facebook" %}</a>
+	<a class="bluesky" href="https://bsky.app/intent/compose?text={{ share_text }}%20{{ participate_url }}" target="_blank">{% include icons/social-icon.html icon="BlueSky" %}</a>
+	<a class="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={{ raw_participate_url }}" target="_blank">{% include icons/social-icon.html icon="LinkedIn" %}</a>
+	<a class="email" href="mailto:?subject={{ share_text }}&body=Check out how you can help: {{ participate_url | url_decode }}" target="_blank">{% include icons/social-icon.html icon="Email" %}</a>
 </div>
 
 <h3 class="editable">Location</h3>
-<div class="map" id="gmap_canvas"></div>
-<address><a href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
+<div class="map" id="map_canvas"></div>
+<address><a href="https://www.openstreetmap.org/search?query={{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
 
 <h3 class="editable">Las Hermanas</h3>
 <div class="grid">
@@ -128,7 +130,7 @@ _options:
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 	if (window.mapData) {
-		var map = L.map('gmap_canvas').setView([window.mapData.latitude, window.mapData.longitude], window.mapData.zoom + 8);
+		var map = L.map('map_canvas').setView([window.mapData.latitude, window.mapData.longitude], window.mapData.zoom + 8);
 		
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '© OpenStreetMap contributors'
