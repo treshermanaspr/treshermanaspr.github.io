@@ -1,8 +1,8 @@
 ---
 ---
 
-@use "variables" as *;
-@use "elements" as *;
-@use "layout" as *;
-@use "form" as *;
-@use "atc" as *;
+@import "variables";
+@import "elements";
+@import "layout";
+@import "form";
+@import "atc";
