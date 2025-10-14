@@ -1268,3 +1268,8 @@ p {
     }
   }
 }
+
+/* Book Drive page - Community Recognition section custom background */
+.book-drive .community-recognition {
+  background: linear-gradient(135deg, var(--light-turquoise) 0%, var(--light-coral) 100%);
+}
