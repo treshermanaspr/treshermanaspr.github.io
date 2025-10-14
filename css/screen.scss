@@ -1240,3 +1240,31 @@ p {
     }
   }
 }
+
+.testimonial-highlight, .community-recognition {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--light-yellow);
+  border-radius: 12px;
+  border: 2px solid var(--primary-yellow);
+
+  p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-weight: 600;
+    color: var(--primary-coral);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--dark-navy);
+      text-decoration: underline;
+    }
+  }
+}
