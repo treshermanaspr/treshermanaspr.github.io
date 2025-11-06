@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Drive Flyer - Tres Hermanas PR</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+        
+        .flyer {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FFD700, #40E0D0);
+            color: #1F2937;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .header h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 0 0;
+            font-weight: normal;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .main-message {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #1F2937;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .details {
+            background: #FFF8DC;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .books-needed {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .books-list {
+            background: #E0FFFF;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .books-list h3 {
+            color: #1F2937;
+            margin-top: 0;
+        }
+        
+        .books-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .contact-info {
+            background: #FFE4E1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .contact-info h3 {
+            color: #1F2937;
+            margin-top: 0;
+        }
+        
+        .tear-offs {
+            border-top: 2px dashed #ccc;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        
+        .tear-strips {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .tear-strip {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 140px;
+            max-width: 180px;
+        }
+        
+        .tear-strip strong {
+            display: block;
+            color: #40E0D0;
+            font-size: 0.9rem;
+        }
+        
+        .tear-strip small {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        @media print {
+            body { background: white; }
+            .flyer { border: 2px solid #000; }
+            .tear-offs { page-break-before: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <h1>BOOK DRIVE</h1>
+            <h2>Help Kids in Puerto Rico!</h2>
+        </div>
+        
+        <div class="content">
+            <div class="main-message">
+                <strong>Join Tres Hermanas PR in bringing books to children across Puerto Rico!</strong><br><br>
+                After Hurricane Maria, many children lost access to books and libraries. 
+                Your book donations help us stock Little Free Libraries and community spaces where kids can discover the joy of reading.
+            </div>
+            
+            <div class="details">
+                <h3 style="text-align: center; margin-top: 0; color: #1F2937;">What We're Collecting:</h3>
+                <div class="books-needed">
+                    <div class="books-list">
+                        <h3>📚 Books We Need:</h3>
+                        <ul>
+                            <li>Picture books (ages 0-8)</li>
+                            <li>Early readers (ages 5-8)</li>
+                            <li>Chapter books (ages 8-12)</li>
+                            <li>Spanish-language books</li>
+                            <li>Board books for toddlers</li>
+                            <li>Educational workbooks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="books-list">
+                        <h3>❌ Please No:</h3>
+                        <ul>
+                            <li>Damaged or torn books</li>
+                            <li>Adult novels</li>
+                            <li>Textbooks</li>
+                            <li>Books with writing in them</li>
+                            <li>Water-damaged books</li>
+                            <li>Outdated reference books</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-weight: bold; color: #1F2937;">
+                    <strong>Collection Dates:</strong> [Fill in your dates]<br>
+                    <strong>Drop-off Location:</strong> [Fill in your location]
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Questions? Want to Help?</h3>
+                <p>
+                    <strong>Email:</strong> TresHermanasPR@gmail.com<br>
+                    <strong>Learn More:</strong> treshermanaspr.github.io<br>
+                    <strong>Organized by:</strong> [Your name/organization]
+                </p>
+            </div>
+        </div>
+        
+        <div class="tear-offs">
+            <p style="text-align: center; margin-bottom: 15px; font-weight: bold; color: #1F2937;">
+                ✂️ Take a tab for more info! ✂️
+            </p>
+            <div class="tear-strips">
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+                <div class="tear-strip">
+                    <strong>Tres Hermanas PR</strong>
+                    <small>Book Drive Info<br>TresHermanasPR@gmail.com</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
