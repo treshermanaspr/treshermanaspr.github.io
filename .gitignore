@@ -4,3 +4,6 @@ _site/
 .jekyll-metadata
 .DS_Store
 .vscode/
+.bundle/
+vendor/
+vendor/bundle/
