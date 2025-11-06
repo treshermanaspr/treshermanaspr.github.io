@@ -1,12 +1,40 @@
-# Tres Hermanas Blog
+# Tres Hermanas PR
 
-A Jekyll-based blog for Tres Hermanas.
+A modern Jekyll-based website for Tres Hermanas, sharing books and inspiring young minds in Puerto Rico.
 
-## Local Development
+## 🚀 Quick Start
+
+### Easy Development Scripts
+
+We've included convenient scripts to start the development server:
+
+**For local development (localhost only):**
+```bash
+./start-local.sh
+```
+
+**For network access (other devices can connect):**
+```bash
+./start-network.sh
+```
+
+**To make scripts executable (one-time setup)**
+```bash
+chmod +x start-local.sh start-network.sh
+```
+
+Both scripts will:
+- Build the Jekyll site automatically
+- Start a stable HTTP server
+- Show you the access URLs
+- Handle all the setup for you
+
+## 🛠 Manual Development Setup
 
 ### Prerequisites
 - Ruby (2.7 or higher recommended)
 - Bundler gem
+- Node.js (for http-server)
 
 ### Setup
 
@@ -21,14 +49,28 @@ A Jekyll-based blog for Tres Hermanas.
    bundle install
    ```
 
-3. Run the site locally:
+3. **Option A: Easy way (recommended)**
    ```bash
-   bundle exec jekyll serve
+   chmod +x start-local.sh start-network.sh  # Make scripts executable
+   ./start-local.sh                          # For local development
    ```
 
-4. Open your browser to `http://localhost:4000`
+4. **Option B: Manual way**
+   ```bash
+   bundle exec jekyll build                  # Build the site
+   cd _site                                  # Enter built site directory
+   npx http-server -p 3000 -a 127.0.0.1     # Start localhost server
+   ```
 
-The site will automatically reload when you make changes to files.
+### Access URLs
+- **Local development:** `http://localhost:3000`
+- **Network access:** `http://[your-ip]:3000` (when using start-network.sh)
+
+### Development Notes
+- We use Node.js `http-server` instead of Jekyll's built-in server for better network stability
+- The site builds to the `_site` directory
+- Changes require rebuilding (restart the script or run `bundle exec jekyll build`)
+- For network access, your firewall may prompt for permission
 
 ### Configuration
 
