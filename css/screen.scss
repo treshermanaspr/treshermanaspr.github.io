@@ -145,17 +145,32 @@ p {
 
   .hero-title {
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background: linear-gradient(45deg, var(--primary-coral), var(--primary-turquoise));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+
   .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: 2rem;
   }
 
   .hero-image {

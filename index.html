@@ -1,6 +1,6 @@
 ---
-title: Tres Hermanas PR - Sharing Books, Inspiring Young Minds
-description: Bringing books to children in Puerto Rico through youth-led book drives and Little Free Libraries
+title: Tres Hermanas PR - Sharing Books, Inspiring Young Minds in Puerto Rico
+description: At Tres Hermanas PR, we believe every child deserves the joy of discovering a great story. Join our movement to nurture a love of reading by giving children across Puerto Rico access to books.
 layout: default
 ---
 
@@ -19,7 +19,11 @@ layout: default
 
 <section class="hero">
   <div class="hero-content">
-    <h1 class="hero-title">Sharing Books, Inspiring Young Minds in Puerto Rico</h1>
+    <h1 class="hero-title">Join Our Movement</h1>
+    <h2 class="hero-subtitle">Sharing Books. Inspiring Young Minds in Puerto Rico.</h2>
+    <p class="hero-description">At Tres Hermanas PR, we believe every child deserves the joy of discovering a great story. Our mission is simple: to nurture a love of reading by giving children across Puerto Rico access to books.</p>
+    <p class="hero-description">Through local community book drives and partnerships with schools and libraries in the States, we bring stories, imagination, and possibility to little readers en la Isla del Encanto.</p>
+    <p class="hero-description">Join us — donate, volunteer, and spread the word. Together, we're building a brighter future, one book — and one story — at a time.</p>
     <div class="hero-buttons">
       <a href="/donate" class="btn btn-primary">How to Donate</a>
       <a href="/book-drive" class="btn btn-secondary">Start Your Own Book Drive</a>
@@ -33,12 +37,12 @@ layout: default
 <section class="mission">
   <div class="container">
     <h2 class="section-title">Mission Statement</h2>
-    <p class="mission-text">Tres Hermanas PR is dedicated to bringing books to children in Puerto Rico, fostering a love of reading and learning around the island.</p>
+    <p class="mission-text">Our mission is to inspire a love of reading and community connection across Puerto Rico by providing children with access to books that reflect their culture, language, and imagination. Through fundraising, donations, and local partnerships, Tres Hermanas PR works to fill Little Libraries and community spaces with stories that empower young readers and celebrate the joy of learning.</p>
     
     <div class="stats">
       <div class="stat-item">
         <div class="stat-icon">📚</div>
-        <div class="stat-number">3,000</div>
+        <div class="stat-number">3000+</div>
         <div class="stat-label">Books Donated</div>
       </div>
       <div class="stat-item">
@@ -58,7 +62,7 @@ layout: default
 <section class="book-drives">
   <div class="container">
     <h2 class="section-title">Youth-Led Book Drives</h2>
-    <p class="section-text">Lead a book drive at your school or in your community to help kids in Puerto Rico. We're here to guide you every step of the way.</p>
+    <p class="section-text">Host a book drive at your school or in your community to help kids in Puerto Rico discover the joy of reading. We'll guide you every step of the way.</p>
     <a href="/book-drive" class="btn btn-primary">Start Here</a>
   </div>
 </section>
@@ -66,6 +70,8 @@ layout: default
 <section class="gallery">
   <div class="container">
     <h2 class="section-title">Our Impact</h2>
+    <!-- To add more photos from Google Photos, see detailed instructions in /uploads/PHOTO_INSTRUCTIONS.md
+         Quick reference: 20+ Google Photos links for Little Library and kids reading are documented there. -->
     <div class="photo-grid">
       <div class="photo-item">
         <img src="/uploads/hermanas-libros/1.jpg" alt="Little Free Library" />
@@ -81,100 +87,8 @@ layout: default
       </div>
     </div>
     <div class="testimonial-highlight">
-      <p>"Your dedication to promoting literacy and supporting our children has made a lasting impact ..."</p>
+      <p>"Your dedication to promoting literacy and supporting our children has made a lasting impact on our community."</p>
       <a href="/uploads/Ramey Children's Park Ltf.pdf" target="_blank">Read the full letter from Ramey Children's Park</a>
     </div>
   </div>
 </section>
-
-<p class="editable">Join us — donate, volunteer, and spread the word. Together, we're building a brighter future, one book — and one story — at a time.</p>
-
-<h3 class="editable">Mission Statement</h3>
-
-<p class="editable">Our mission is to inspire a love of reading and community connection across Puerto Rico by providing children with access to books that reflect their culture, language, and imagination. Through fundraising, donations, and local partnerships, Tres Hermanas PR works to fill Little Libraries and community spaces with stories that empower young readers and celebrate the joy of learning.</p>
-
-<h3 class="editable">Our Impact</h3>
-<div class="impact-statistic" role="img" aria-label="3000 plus books donated to children in Puerto Rico">
-	<p class="editable impact-number">3000+</p>
-	<p class="editable impact-label">books donated</p>
-</div>
-
-<h3 class="editable">Youth-Led Book Drives</h3>
-
-<p class="editable">Host a book drive at your school or in your community to help kids in Puerto Rico discover the joy of reading. We'll guide you every step of the way.</p>
-
-<!-- IMAGE PLACEHOLDERS: To add images from Google Photos, see detailed instructions in /uploads/PHOTO_INSTRUCTIONS.md
-     Quick links to download Little Library and kids reading photos are available there. -->
-
-<h3 class="editable" id="projects">Let's Get Started!</h3>
-<div class="gallery">
-	{% for feature in page.featured_projects %}
-		<a href="{% include relative-src.html src=feature.link %}">
-			<div class="inner-wrapper">
-				<img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
-			</div>
-			<p class="caption">{{ feature.title }}</p>
-		</a>
-	{% endfor %}
-</div>
-
-<h3 class="editable">Tell your friends</h3>
-<div class="sharing">
-	{% assign share_text = "Send books to kids in Puerto Rico" | cgi_escape %}
-	{% assign participate_url = site.baseurl | append: "/pages/participate/" | absolute_url | cgi_escape %}
-	{% assign raw_participate_url = site.baseurl | append: "/pages/participate/" | absolute_url %}
-	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ raw_participate_url }}&hashtag=%23PuertoRico" target="_blank">{% include icons/social-icon.html icon="Facebook" %}</a>
-	<a class="bluesky" href="https://bsky.app/intent/compose?text={{ share_text }}%20{{ participate_url }}" target="_blank">{% include icons/social-icon.html icon="BlueSky" %}</a>
-	<a class="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={{ raw_participate_url }}" target="_blank">{% include icons/social-icon.html icon="LinkedIn" %}</a>
-	<a class="email" href="mailto:?subject={{ share_text }}&body=Check out how you can help: {{ participate_url | url_decode }}" target="_blank">{% include icons/social-icon.html icon="Email" %}</a>
-</div>
-
-<h3 class="editable">Location</h3>
-<div class="map" id="map_canvas"></div>
-<address><a href="https://www.openstreetmap.org/search?query={{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
-
-<h3 class="editable">Las Hermanas</h3>
-<div class="grid">
-	{% for photo in page.photos %}
-		<div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
-	{% endfor %}
-</div>
-
-<h3 class="editable" id="contact-us">Contact</h3>
-<p class="editable">Send us a message with any questions about getting involved, or if you just want to say "Hi" or anything else.</p>
-
-<div class="contact-options">
-	<a href="mailto:{{ site.author.email }}?subject=Question about sending books to Puerto Rico&body=Hi! I have a question about your book donation project:%0D%0A%0D%0A" class="contact-button email-button" style="display: inline-flex; align-items: center; gap: 8px; background-color: #007acc; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">
-		<svg fill="currentColor" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-top: -10px;">
-			<path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
-		</svg>
-		Send Email
-	</a>
-</div>
-
-<script type="text/javascript">
-	{% if page.map %}
-	window.mapData = {{ page.map | jsonify }};
-	{% else %}
-	window.mapData = null;
-	{% endif %}
-</script>
-
-<!-- OpenStreetMap with Leaflet.js -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-	if (window.mapData) {
-		var map = L.map('map_canvas').setView([window.mapData.latitude, window.mapData.longitude], window.mapData.zoom + 8);
-		
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: '© OpenStreetMap contributors'
-		}).addTo(map);
-		
-		L.marker([window.mapData.latitude, window.mapData.longitude])
-			.addTo(map)
-			.bindPopup(window.mapData.address);
-	}
-});
-</script>
