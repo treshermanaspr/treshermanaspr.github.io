@@ -17,7 +17,7 @@ Once the photo is provided, save it as `helena.jpg` in this directory.
 ### Rose Geraci's Photo
 Once the photo is provided, save it as `rose.jpg` in this directory.
 
-### Aunchalee Moira Palmquist's Photo (Optional)
+### Aunchalee Moira Palmquist's Photo
 If a photo is provided, save it as `aunchalee.jpg` in this directory.
 
 ## Updating the Who We Are Page
