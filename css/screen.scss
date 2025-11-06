@@ -519,12 +519,20 @@ p {
 .our-approach {
   padding: 6rem 0;
   background: var(--warm-white);
+  text-align: center;
+
+  h2 {
+    text-align: center;
+  }
 
   .approach-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 
     .approach-item {
       text-align: center;
@@ -544,6 +552,22 @@ p {
         color: var(--text-secondary);
       }
     }
+  }
+}
+
+.community-feedback {
+  padding: 6rem 0;
+  background: var(--warm-white);
+  text-align: center;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial-highlight {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
