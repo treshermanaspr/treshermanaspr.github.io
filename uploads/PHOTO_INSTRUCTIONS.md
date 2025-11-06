@@ -101,4 +101,4 @@ photos:
 
 ## Note from Issue
 
-The issue mentions: "I love the quote from the Ramey Park" - if there's a specific quote or sign at Ramey Park, consider featuring it prominently on the page.
+The issue mentions: "I love the quote from Ramey Park" - if there's a specific quote or sign at Ramey Park, consider featuring it prominently on the page.

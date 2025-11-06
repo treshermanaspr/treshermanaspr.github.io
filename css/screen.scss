@@ -516,35 +516,20 @@ p {
   }
 }
 
-.our-approach {
-  padding: 6rem 0;
-  background: var(--warm-white);
-
-  .approach-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-
-    .approach-item {
-      text-align: center;
-      padding: 2rem;
-
-      .approach-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      h3 {
-        margin-bottom: 1rem;
-        color: var(--text-primary);
-      }
-
-      p {
-        color: var(--text-secondary);
-      }
-    }
-  }
+.impact-statistic {
+	text-align: center;
+	margin: 30px 0 50px 0;
+	
+	.impact-number {
+		font-size: 4em;
+		margin: 10px 0;
+		font-weight: bold;
+	}
+	
+	.impact-label {
+		font-size: 1.8em;
+		margin: 0;
+	}
 }
 
 // Who We Are page styles
