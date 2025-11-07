@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Drive Flyer - Tres Hermanas PR</title>
+    <title>Book Drive Collection Flyer - Tres Hermanas PR</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -130,29 +130,71 @@
             color: #666;
         }
         
+        /* Editable field styling */
+        [contenteditable="true"] {
+            outline: none;
+            cursor: text;
+            position: relative;
+            border-radius: 3px;
+            transition: background-color 0.2s;
+        }
+        
+        [contenteditable="true"]:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+        
+        [contenteditable="true"]:focus {
+            background-color: rgba(255, 215, 0, 0.2);
+        }
+        
+        [contenteditable="true"]:empty:before {
+            content: attr(data-placeholder);
+            color: #999;
+            font-style: italic;
+        }
+        
+        .edit-instructions {
+            background: #FFE4E1;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px dashed #FF7F7F;
+        }
+        
         @media print {
             body { background: white; }
             .flyer { border: 2px solid #000; }
             .tear-offs { page-break-before: avoid; }
+            .edit-instructions { display: none; }
+            [contenteditable="true"]:hover {
+                background-color: transparent;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="edit-instructions">
+        <strong>📝 Customize this flyer for your book drive!</strong><br>
+        <small>Click on the highlighted areas to add your collection dates and location. Print multiple copies (Ctrl/Cmd + P) to hang around your school or community.</small>
+    </div>
+    
     <div class="flyer">
         <div class="header">
-            <h1>BOOK DRIVE</h1>
-            <h2>Help Kids in Puerto Rico!</h2>
+            <h1>📚 BOOK DRIVE 📚</h1>
+            <h2>Help Kids in Puerto Rico Get Books!</h2>
         </div>
         
         <div class="content">
             <div class="main-message">
-                <strong>Join Tres Hermanas PR in bringing books to children across Puerto Rico!</strong><br><br>
+                <strong style="font-size: 1.4rem; color: #FF7F7F;">WE NEED YOUR BOOKS!</strong><br><br>
+                <strong>Join us in bringing books to children across Puerto Rico!</strong><br><br>
                 After Hurricane Maria, many children lost access to books and libraries. 
-                Your book donations help us stock Little Free Libraries and community spaces where kids can discover the joy of reading.
+                Your book donations help us stock Little Free Libraries where kids can discover the joy of reading.
             </div>
             
             <div class="details">
-                <h3 style="text-align: center; margin-top: 0; color: #1F2937;">What We're Collecting:</h3>
+                <h3 style="text-align: center; margin-top: 0; color: #1F2937; font-size: 1.5rem;">📖 What We're Collecting 📖</h3>
                 <div class="books-needed">
                     <div class="books-list">
                         <h3>📚 Books We Need:</h3>
@@ -160,44 +202,47 @@
                             <li>Picture books (ages 0-8)</li>
                             <li>Early readers (ages 5-8)</li>
                             <li>Chapter books (ages 8-12)</li>
-                            <li>Spanish-language books</li>
+                            <li>Spanish-language books (all ages)</li>
                             <li>Board books for toddlers</li>
-                            <li>Educational workbooks</li>
                         </ul>
                     </div>
                     
                     <div class="books-list">
                         <h3>❌ Please No:</h3>
                         <ul>
-                            <li>Damaged or torn books</li>
-                            <li>Adult novels</li>
-                            <li>Textbooks</li>
-                            <li>Books with writing in them</li>
-                            <li>Water-damaged books</li>
+                            <li>Books with torn or missing pages</li>
+                            <li>Water damaged books</li>
+                            <li>Adult novels or textbooks</li>
+                            <li>Books with writing/highlighting</li>
                             <li>Outdated reference books</li>
+                            <li>Books in poor condition</li>
+                            <li>Religious Books</li>
                         </ul>
                     </div>
                 </div>
                 
-                <p style="text-align: center; font-weight: bold; color: #1F2937;">
-                    <strong>Collection Dates:</strong> [Fill in your dates]<br>
-                    <strong>Drop-off Location:</strong> [Fill in your location]
+                <p style="text-align: center; font-weight: bold; color: #1F2937; font-size: 1.2rem; background: white; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                    📅 <strong>Collection Dates:</strong> <span contenteditable="true" data-placeholder="Click to enter dates" style="color: #FF7F7F;">Fill in your dates</span><br><br>
+                    📍 <strong>Drop-off Location:</strong> <span contenteditable="true" data-placeholder="Click to enter location" style="color: #FF7F7F;">Fill in your location</span>
                 </p>
             </div>
             
             <div class="contact-info">
                 <h3>Questions? Want to Help?</h3>
-                <p>
+                <p style="font-size: 1.1rem;">
                     <strong>Email:</strong> TresHermanasPR@gmail.com<br>
                     <strong>Learn More:</strong> treshermanaspr.github.io<br>
-                    <strong>Organized by:</strong> [Your name/organization]
+                    <strong>Organized by:</strong> <span contenteditable="true" data-placeholder="Click to enter your name/organization" style="color: #FF7F7F;">Your name/organization</span>
+                </p>
+                <p style="margin-top: 15px; font-size: 0.95rem; font-style: italic;">
+                    Tres Hermanas PR is a 501(c)(3) youth-led nonprofit bringing books to children in Puerto Rico
                 </p>
             </div>
         </div>
         
         <div class="tear-offs">
-            <p style="text-align: center; margin-bottom: 15px; font-weight: bold; color: #1F2937;">
-                ✂️ Take a tab for more info! ✂️
+            <p style="text-align: center; margin-bottom: 15px; font-weight: bold; color: #1F2937; font-size: 1.1rem;">
+                ✂️ TAKE A TAB FOR MORE INFO! ✂️
             </p>
             <div class="tear-strips">
                 <div class="tear-strip">
