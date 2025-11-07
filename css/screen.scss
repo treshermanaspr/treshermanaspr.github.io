@@ -61,6 +61,18 @@ p {
   color: var(--text-secondary);
 }
 
+a {
+  font-weight: 600;
+  color: var(--primary-coral);
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--dark-navy);
+    text-decoration: underline;
+  }
+}
+
 // Layout Utilities
 .container {
   max-width: 1200px;
@@ -218,6 +230,22 @@ p {
       background: #36D7C7;
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(64, 224, 208, 0.4);
+    }
+  }
+
+  &.btn-link {
+    background: transparent;
+    color: var(--primary-coral);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--dark-navy);
+      text-decoration: underline;
+      transform: none;
+      box-shadow: none;
     }
   }
 }
@@ -606,6 +634,8 @@ p {
       }
     }
   }
+}
+
 .impact-statistic {
 	text-align: center;
 	margin: 30px 0 50px 0;
@@ -1269,9 +1299,13 @@ p {
 
   .resource-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     .resource-card {
       background: white;
@@ -1417,4 +1451,5 @@ p {
 .book-drive .community-recognition {
   background: linear-gradient(135deg, var(--light-turquoise) 0%, var(--light-coral) 100%);
 }
-}
+
+/* If .book-drive is not on the body, you can use a more specific selector or add a class to the section in the HTML */
