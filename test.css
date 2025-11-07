@@ -1,0 +1,66 @@
+/*
+Error: Invalid CSS after "": expected selector, was "---"
+        on line 1 of css/screen.scss
+
+1: ---
+2: ---
+3: 
+4: // New Design System for Tres Hermanas PR
+5: // Color Palette: Warm, child-friendly colors
+6: 
+
+Backtrace:
+css/screen.scss:1
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1218:in `expr!'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Users/jessephus/.rbenv/versions/3.3.0/bin/sass:25:in `load'
+/Users/jessephus/.rbenv/versions/3.3.0/bin/sass:25:in `<top (required)>'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli/exec.rb:59:in `load'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli/exec.rb:59:in `kernel_load'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli/exec.rb:23:in `run'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli.rb:451:in `exec'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli.rb:35:in `dispatch'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/cli.rb:29:in `start'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/exe/bundle:28:in `block in <top (required)>'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/lib/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+/Users/jessephus/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.1/exe/bundle:20:in `<top (required)>'
+/Users/jessephus/.rbenv/versions/3.3.0/bin/bundle:25:in `load'
+/Users/jessephus/.rbenv/versions/3.3.0/bin/bundle:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of css/screen.scss\A \A 1: ---\A 2: ---\A 3: \A 4: // New Design System for Tres Hermanas PR\A 5: // Color Palette: Warm, child-friendly colors\A 6: "; }
