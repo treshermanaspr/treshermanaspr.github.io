@@ -38,6 +38,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - vendor
+  - .bundle
 
 defaults:
   -

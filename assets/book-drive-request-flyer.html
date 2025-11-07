@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Drive Request - Tres Hermanas PR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+        
+        .flyer {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid #1F4A5A;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .banner {
+            width: 100%;
+            display: block;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF8A65, #1F4A5A);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .header h2 {
+            font-size: 1.3rem;
+            margin: 10px 0 0 0;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .greeting {
+            font-size: 1.1rem;
+            color: #1F4A5A;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .proposal {
+            background: #FFF3E0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #FF8A65;
+        }
+        
+        .proposal h3 {
+            color: #1F4A5A;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        
+        .benefits {
+            background: #E8F4F8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .benefits h3 {
+            color: #1F4A5A;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        
+        .benefits ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        
+        .benefits li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #1F4A5A;
+        }
+        
+        .logistics {
+            background: #FFE8E0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .logistics h3 {
+            color: #1F4A5A;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        
+        .logistics p, .logistics ul {
+            color: #1F4A5A;
+        }
+        
+        .about-org {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #1F4A5A;
+        }
+        
+        .about-org h3 {
+            color: #1F4A5A;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        
+        .about-org p {
+            color: #1F4A5A;
+        }
+        
+        .contact-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #FFE8E0, #FFF3E0);
+            border-radius: 10px;
+        }
+        
+        .contact-section h3 {
+            color: #1F4A5A;
+            font-weight: 700;
+        }
+        
+        .contact-section p {
+            color: #1F4A5A;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #1F4A5A;
+            color: #1F4A5A;
+        }
+        
+        /* Editable field styling */
+        [contenteditable="true"] {
+            outline: none;
+            cursor: text;
+            position: relative;
+            border-radius: 3px;
+            transition: background-color 0.2s;
+            padding: 2px 4px;
+            font-weight: 600;
+        }
+        
+        [contenteditable="true"]:hover {
+            background-color: rgba(255, 138, 101, 0.15);
+        }
+        
+        [contenteditable="true"]:focus {
+            background-color: rgba(255, 138, 101, 0.25);
+        }
+        
+        [contenteditable="true"]:empty:before {
+            content: attr(data-placeholder);
+            color: #999;
+            font-style: italic;
+            font-weight: 400;
+        }
+        
+        .edit-instructions {
+            background: #FFE8E0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px dashed #FF8A65;
+        }
+        
+        .edit-instructions strong {
+            color: #1F4A5A;
+        }
+        
+        .edit-instructions small {
+            color: #1F4A5A;
+        }
+        
+        @media print {
+            body { background: white; }
+            .flyer { border: 2px solid #000; }
+            .edit-instructions { display: none; }
+            [contenteditable="true"]:hover {
+                background-color: transparent;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="edit-instructions">
+        <strong>📝 Customize this request letter before printing!</strong><br>
+        <small>Click on the highlighted areas to add your information, then print (Ctrl/Cmd + P) to share with administrators.</small>
+    </div>
+    
+    <div class="flyer">
+        <img src="/assets/flyer-banner.jpg" alt="Bring the Joy of Reading to Puerto Rico" class="banner">
+        
+        <div class="header">
+            <h1>Book Drive Partnership Request</h1>
+            <h2>Help Children in Puerto Rico Access Books</h2>
+        </div>
+        
+        <div class="content">
+            <div class="greeting">
+                <p>Dear <span contenteditable="true" data-placeholder="Administrator/Librarian Name">School/Library Administrator</span>,</p>
+                
+                <p>My name is <span contenteditable="true" data-placeholder="Your Name">Student Name</span>, and I am a <span contenteditable="true" data-placeholder="grade/role">student/member</span> at <span contenteditable="true" data-placeholder="your organization">this school/organization</span>. I am writing to request permission to organize a book drive in partnership with Tres Hermanas PR, a youth-led nonprofit that brings books to children in Puerto Rico.</p>
+            </div>
+            
+            <div class="benefits">
+                <h3>✨ Benefits for Our School/Organization</h3>
+                <ul>
+                    <li><strong>Student Leadership:</strong> Develops organizational, communication, and project management skills</li>
+                    <li><strong>Community Service:</strong> Students make a tangible difference in children's lives</li>
+                    <li><strong>Cultural Awareness:</strong> Connects students with communities in Puerto Rico</li>
+                    <li><strong>Service Learning:</strong> Aligns with community service and character education goals</li>
+                    <li><strong>Low Cost:</strong> Tres Hermanas PR helps fundraise to cover shipping costs</li>
+                    <li><strong>Easy to Run:</strong> Simple collection process with proven success</li>
+                </ul>
+            </div>
+            
+            <div class="logistics">
+                <h3>📋 How It Would Work</h3>
+                <p><strong>Timeline:</strong> <span contenteditable="true" data-placeholder="e.g., 2-4 weeks">Proposed dates</span></p>
+                <p><strong>Collection Location:</strong> <span contenteditable="true" data-placeholder="e.g., main lobby, library entrance">Proposed location</span></p>
+                <p><strong>What We'd Collect:</strong> Gently used children's books (ages 0-12), both English and Spanish</p>
+                <p><strong>My Responsibilities:</strong></p>
+                <ul>
+                    <li>Create and distribute promotional flyers (provided by Tres Hermanas PR)</li>
+                    <li>Set up and monitor collection boxes</li>
+                    <li>Sort and count collected books</li>
+                    <li>Coordinate shipping with Tres Hermanas PR</li>
+                    <li>Report results to the school community</li>
+                </ul>
+                <p><strong>Support Needed:</strong> Permission to place collection boxes, make announcements, and display promotional materials</p>
+            </div>
+            
+            <div class="about-org">
+                <h3>Let's Make This Happen!</h3>
+                <p>I am excited about this opportunity to lead a meaningful project that helps children while developing my leadership skills. I would be happy to meet with you to discuss this proposal further and answer any questions.</p>
+                <p><strong>Thank you for considering this request!</strong></p>
+            </div>
+            
+            <div class="signature">
+                <p>Sincerely,</p>
+                <p><span contenteditable="true" data-placeholder="Your Name">Student Name</span></p>
+                <p><span contenteditable="true" data-placeholder="Your Contact Info">Email/Phone</span></p>
+                <p><span contenteditable="true" data-placeholder="Date">Date</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
